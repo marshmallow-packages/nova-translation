@@ -17,16 +17,16 @@ use Marshmallow\NovaTranslation\Http\Controllers\LanguageTranslationController;
 */
 
 Route::get('languages', LanguageController::class.'@index')
-    ->name('languages.index');
+    ->name('nova.languages.index');
 
 Route::post('languages', LanguageController::class.'@store')
-    ->name('languages.store');
+    ->name('nova.languages.store');
 
 Route::get('languages/{language}/translations', LanguageTranslationController::class.'@index')
-    ->name('languages.translations.index');
+    ->name('nova.languages.translations.index');
 
 Route::put('languages/{language}/translations', LanguageTranslationController::class.'@update')
-    ->name('languages.translations.update');
+    ->name('nova.languages.translations.update');
 
 Route::post('languages/{language}/translations', LanguageTranslationController::class.'@store')
-    ->name('languages.translations.store');
+    ->name('nova.languages.translations.store');
